@@ -1,0 +1,259 @@
+%-------------------------
+% Resume in Latex
+% Author : Romain Giraud
+% Based off of: https://github.com/sb2nov/resume
+% and: https://github.com/mattyHerzig/mattys_resume/
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+% \usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xparse}
+\usepackage{fontawesome5}
+\usepackage{fontspec}
+% \setmainfont{Calibri}
+\setmainfont{Latin Modern Roman}
+\setmonofont{JetBrains Mono}
+
+% \input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{4.08003pt}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\ExplSyntaxOn
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \tl_if_empty:nTF{#3}
+        {}
+        {\textit{\small#3} & \textit{\small #4} \\}
+    \end{tabular*}\vspace{-7pt}
+    \tl_if_empty:nTF{#3}{\par\vspace{5pt}}{}
+}
+\ExplSyntaxOff
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{https://romaingiraud.com/}{\Large Romain Giraud}} & Email : \href{mailto:job@romaingiraud.com}{job@romaingiraud.com}\\
+%   \href{https://romaingiraud.com/}{https://romaingiraud.com/} & Mobile : +33 6 11 22 33 44 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Romain Giraud} \\ \vspace{8pt}
+    \small
+    \faIcon{envelope} \href{mailto:job@romaingiraud.com}{\underline{job@romaingiraud.com}} $|$
+    \faIcon{code} \href{https://romaingiraud.com}{\underline{romaingiraud.com}} \\ \vspace{1pt}
+    \faIcon{linkedin} \href{https://www.linkedin.com/in/romain-giraud-com/}{\underline{www.linkedin.com/in/romain-giraud-com/}} $|$
+    \faIcon{github} \href{https://github.com/romaingiraud}{\underline{github.com/romaingiraud}}
+\end{center}
+
+\textbf{Senior Software Engineer} specialized in \textbf{C/C++ and performance-critical systems}, with additional experience in \textbf{Python and machine learning}. Used to working in R\&D contexts, driving software from PoC to production, and delivering highly optimized, reliable systems in telecom and avionics environments, from low-level embedded components to backend and ML-driven services.
+
+% Senior Software Engineer with a strong focus on C/C++ systems development, complemented by Python and applied machine learning. Extensive experience working in R\&D environments, taking products from proof of concept to production deployment, across the full software stack. Proven background in developing performance-critical and safety-constrained systems, requiring high levels of optimization, reliability, and real-time processing, notably in telecom and avionics contexts. Comfortable bridging low-level embedded software with data processing, backend services, and ML-based decision-support solutions.
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Linux Foundation}{Online}
+      {Certified Kubernetes Application Developer}{Dec. 2024}
+    \resumeSubheading
+      {Polytech'Nice}{Sophia Antipolis, France}
+      {Computer engineering degree}{Aug. 2008 -- Aug. 2011}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Senior Engineer}{Oct. 2020 -- May 2025}
+      {FraudBuster}{Marseille, France}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented a \textbf{real-time 4G traffic analysis system} capable of processing high-volume network data, using \textbf{C and DPDK} for low-latency packet handling and a \textbf{Python/Django backend} with \textbf{Celery, PostgreSQL, and MongoDB}, enabling scalable deep packet inspection in a telecom environment.}
+        \resumeItem{Designed and implemented a \textbf{proof of concept ML pipeline} to detect fraudulent calls on a GSM network, combining \textbf{Go-based network capture and audio processing} with \textbf{PyTorch models} to generate decision-support indicators for fraud analysts, after evaluating statistical, speech-recognition, spectrogram-based, and deep learning approaches.}
+        \resumeItem{Joined a newly formed development team following a company merger, contributing to the design of a Mobile Money product by \textbf{building data collection and transformation tools for mobile money transactions}, enabling analysts to efficiently monitor and investigate financial activity.}
+        \resumeItem{Trained and deployed \textbf{machine learning models} to classify scam messages in a Mobile Money fraud context, providing \textbf{decision-support indicators} to assist fraud analysts.}
+      \resumeItemListEnd
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Paternity leave}{Jan. 2020 -- Sept. 2020}
+      {}{}
+
+    \resumeSubheading
+      {World travel}{Sept. 2018 -- June 2019}
+      {}{Everywhere}
+      % \resumeItemListStart
+      %   \resumeItem{Independently planned and completed a long-term international journey}
+      %   \resumeItem{Built strong adaptability, cross-cultural communication, and a global perspective}
+      % \resumeItemListEnd
+
+    \resumeSubheading
+      {Lead Engineer}{June 2014 -- June 2018}
+      {Nex Vision}{Marseille, France}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented an embedded video surveillance system for the Airbus A380, enabling real-time display of multiple camera feeds on a single screen, managing video data flow and integration with the Cabin Management System, using GStreamer on a Texas Instruments chipset.}
+        \resumeItem{Designed and architected an embedded gyrostabilized camera system for helicopter applications, combining a custom PCB with an NVIDIA Tegra, real-time FPGA processing, and a C++/Qt/OpenGL software stack, including low-level Linux driver development for motor and camera control.}
+        \resumeItem{Took ownership of software architecture definition, CI implementation, and technical issue resolution, coordinating resources to support multiple development initiatives.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Freelance}{May 2012 -- May 2014}
+      {Independent}{Marseille, France}
+      \resumeItemListStart
+        \resumeItem{Co-created a 2D platformer video game, initially developed in XNA and later migrated to Unity, redesigning the architecture to support the engine transition. Implemented interactive environment systems (water and lava simulation), object-based interactions, and item properties (e.g., wood, stone) to enable gameplay mechanics and puzzle-solving.}
+        % \resumeItem{Continued contributing to Unity projects for my previous employer.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Lead Engineer}{Nov. 2011 -- April 2012}
+      {So Touch}{Marseille, France}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented an interactive Unity showroom application to showcase search engine capabilities, enabling users to explore travel destinations on a 3D globe. Integrated Kinect, Leap Motion, and 3D display support, including a custom UI system optimized for gesture-based interaction.}
+        % \resumeItem{Co-developed and verified iOS projects.}
+      \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Software Engineer}{June 2007 -- Sept. 2007}
+    %   {R.M.S.}{Les Milles, France}
+    %   \resumeItemListStart
+    %     \resumeItem{Designed a clear and usable UI for a sound signal analysis tool, and evolved the software architecture to accommodate changing functional requirements, using C++ and Qt.}
+    %   \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+% \section{Projects}
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%           {\textbf{TravelSeeker} $|$ \emph{Unity, Kinect, C\#}}{Nov. 2011 -- April 2012}
+%           \resumeItemListStart
+%             \resumeItem{Developed for Amadeus, TravelSeeker is a 3D application that suggests travel destinations based on a user profile.}
+%             \resumeItem{It can be controlled via mouse, Leap Motion, or Kinect, offering an immersive and interactive experience.}
+%             \resumeItem{I served as the lead and sole developer, responsible for implementing the full Unity application, integrating 3D interactions, and ensuring compatibility with multiple input devices.}
+%           \resumeItemListEnd
+%       \resumeProjectHeading
+%           {\textbf{LR parser} $|$ \emph{C++, Python}}{June 2025 -- Sept. 2025}
+%           \resumeItemListStart
+%             \resumeItem{I built this project to deepen my understanding of compiler theory and explore how LR parsers work under the hood.}
+%             \resumeItem{The tool takes a grammar definition file as input and generates ready-to-use C++ parsing code, which can be integrated directly into larger projects.}
+%             \resumeItem{This hands-on exercise gave me practical insights into automata theory, grammar analysis, and code generation.}
+%           \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, Python, C, Rust, Go, C\#, SQL} \\
+     \textbf{Frameworks}{: Boost, PyTorch, Django} \\
+     \textbf{Developer Tools}{: Git, jj, container (Docker, Podman), CI/CD, Kubernetes} \\
+     \textbf{Soft}{: collaboration and communication skills, curious, fast learner, French native, English fluent}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
