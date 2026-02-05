@@ -20,6 +20,7 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{xparse}
+\usepackage{changepage}
 \usepackage{fontawesome5}
 \usepackage{fontspec}
 % \setmainfont{Calibri}
@@ -128,26 +129,15 @@
 \begin{center}
     \textbf{\Huge \scshape Romain Giraud} \\ \vspace{8pt}
     \small
-    \faIcon{envelope} \href{mailto:job@romaingiraud.com}{\underline{job@romaingiraud.com}} $|$
+    \faIcon{envelope} \href{mailto:job@romaingiraud.com}{\underline{job@romaingiraud.com}} $ $
     \faIcon{code} \href{https://romaingiraud.com}{\underline{romaingiraud.com}} \\ \vspace{1pt}
-    \faIcon{linkedin} \href{https://www.linkedin.com/in/romain-giraud-com/}{\underline{www.linkedin.com/in/romain-giraud-com/}} $|$
+    \faIcon{linkedin} \href{https://www.linkedin.com/in/romain-giraud-com/}{\underline{www.linkedin.com/in/romain-giraud-com/}} $ $
     \faIcon{github} \href{https://github.com/romaingiraud}{\underline{github.com/romaingiraud}}
 \end{center}
 
-\textbf{Senior Software Engineer} specialized in \textbf{C/C++ and performance-critical systems}, with additional experience in \textbf{Python and machine learning}. Used to working in R\&D contexts, driving software from PoC to production, and delivering highly optimized, reliable systems in telecom and avionics environments, from low-level embedded components to backend and ML-driven services.
+\textbf{Senior Software Engineer} specialized in \textbf{modern C++ and performance-critical systems}, with additional experience in \textbf{Python and applied machine learning}. Used to working in R\&D environments, driving software from PoC to production, and delivering highly optimized, reliable systems in telecom and avionics contexts, spanning low-level embedded development, backend services, and ML-driven solutions.
 
 % Senior Software Engineer with a strong focus on C/C++ systems development, complemented by Python and applied machine learning. Extensive experience working in R\&D environments, taking products from proof of concept to production deployment, across the full software stack. Proven background in developing performance-critical and safety-constrained systems, requiring high levels of optimization, reliability, and real-time processing, notably in telecom and avionics contexts. Comfortable bridging low-level embedded software with data processing, backend services, and ML-based decision-support solutions.
-
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Linux Foundation}{Online}
-      {Certified Kubernetes Application Developer}{Dec. 2024}
-    \resumeSubheading
-      {Polytech'Nice}{Sophia Antipolis, France}
-      {Computer engineering degree}{Aug. 2008 -- Aug. 2011}
-  \resumeSubHeadingListEnd
 
 
 %-----------EXPERIENCE-----------
@@ -155,11 +145,11 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Senior Engineer}{Oct. 2020 -- May 2025}
+      {Senior Software Engineer}{Oct. 2020 -- May 2025}
       {FraudBuster}{Marseille, France}
       \resumeItemListStart
-        \resumeItem{Designed and implemented a \textbf{real-time 4G traffic analysis system} capable of processing high-volume network data, using \textbf{C and DPDK} for low-latency packet handling and a \textbf{Python/Django backend} with \textbf{Celery, PostgreSQL, and MongoDB}, enabling scalable deep packet inspection in a telecom environment.}
-        \resumeItem{Designed and implemented a \textbf{proof of concept ML pipeline} to detect fraudulent calls on a GSM network, combining \textbf{Go-based network capture and audio processing} with \textbf{PyTorch models} to generate decision-support indicators for fraud analysts, after evaluating statistical, speech-recognition, spectrogram-based, and deep learning approaches.}
+        \resumeItem{Designed and implemented a \textbf{real-time 4G traffic analysis system} capable of processing high-volume network data, using \textbf{C and DPDK} for low-latency packet handling and a \textbf{Python/Django backend} with \textbf{Celery, and PostgreSQL}, enabling scalable deep packet inspection in a telecom environment.}
+        \resumeItem{Designed and implemented a \textbf{proof of concept ML pipeline} to detect fraudulent calls on a GSM network, combining \textbf{Go-based network capture and audio processing} with \textbf{PyTorch models} to generate decision-support indicators for fraud analysts. Evaluated multiple detection approaches, including statistical methods, speech recognition, spectrogram-based classification, and deep learning.}
         \resumeItem{Joined a newly formed development team following a company merger, contributing to the design of a Mobile Money product by \textbf{building data collection and transformation tools for mobile money transactions}, enabling analysts to efficiently monitor and investigate financial activity.}
         \resumeItem{Trained and deployed \textbf{machine learning models} to classify scam messages in a Mobile Money fraud context, providing \textbf{decision-support indicators} to assist fraud analysts.}
       \resumeItemListEnd
@@ -180,34 +170,34 @@
 
     \resumeSubheading
       {World travel}{Sept. 2018 -- June 2019}
-      {}{Everywhere}
+      {}{}
       % \resumeItemListStart
       %   \resumeItem{Independently planned and completed a long-term international journey}
       %   \resumeItem{Built strong adaptability, cross-cultural communication, and a global perspective}
       % \resumeItemListEnd
 
     \resumeSubheading
-      {Lead Engineer}{June 2014 -- June 2018}
+      {Lead Software Engineer}{June 2014 -- June 2018}
       {Nex Vision}{Marseille, France}
       \resumeItemListStart
-        \resumeItem{Designed and implemented an embedded video surveillance system for the Airbus A380, enabling real-time display of multiple camera feeds on a single screen, managing video data flow and integration with the Cabin Management System, using GStreamer on a Texas Instruments chipset.}
-        \resumeItem{Designed and architected an embedded gyrostabilized camera system for helicopter applications, combining a custom PCB with an NVIDIA Tegra, real-time FPGA processing, and a C++/Qt/OpenGL software stack, including low-level Linux driver development for motor and camera control.}
-        \resumeItem{Took ownership of software architecture definition, CI implementation, and technical issue resolution, coordinating resources to support multiple development initiatives.}
+        \resumeItem{Designed and implemented an embedded video surveillance system for the \textbf{Airbus A380}, enabling \textbf{real-time display of multiple camera feeds} on a single screen, managing video data flow and integration with the Cabin Management System, using GStreamer on a Texas Instruments chipset.}
+        \resumeItem{Designed and architected an \textbf{embedded gyrostabilized camera system for helicopter applications}, combining a custom PCB with an \textbf{NVIDIA Tegra, real-time FPGA processing, and a C++/Qt/OpenGL software stack}, including low-level Linux driver development for motor and camera control.}
+        \resumeItem{Took ownership of \textbf{software architecture definition, CI implementation, and technical issue resolution}, coordinating resources to support multiple development initiatives.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Freelance}{May 2012 -- May 2014}
       {Independent}{Marseille, France}
       \resumeItemListStart
-        \resumeItem{Co-created a 2D platformer video game, initially developed in XNA and later migrated to Unity, redesigning the architecture to support the engine transition. Implemented interactive environment systems (water and lava simulation), object-based interactions, and item properties (e.g., wood, stone) to enable gameplay mechanics and puzzle-solving.}
+        \resumeItem{Co-created a 2D platformer video game, initially developed in XNA and later migrated to \textbf{Unity}, redesigning the architecture to support the engine transition. Implemented \textbf{interactive environment systems} (water and lava simulation), object-based interactions, and item properties (e.g., wood, stone) to enable gameplay mechanics and puzzle-solving.}
         % \resumeItem{Continued contributing to Unity projects for my previous employer.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Lead Engineer}{Nov. 2011 -- April 2012}
+      {Lead Software Engineer}{Nov. 2011 -- April 2012}
       {So Touch}{Marseille, France}
       \resumeItemListStart
-        \resumeItem{Designed and implemented an interactive Unity showroom application to showcase search engine capabilities, enabling users to explore travel destinations on a 3D globe. Integrated Kinect, Leap Motion, and 3D display support, including a custom UI system optimized for gesture-based interaction.}
+        \resumeItem{Designed and implemented an interactive \textbf{Unity showroom application} to showcase search engine capabilities, enabling users to explore travel destinations on a 3D globe. Integrated \textbf{Kinect, Leap Motion, and 3D display support}, including a custom UI system optimized for gesture-based interaction.}
         % \resumeItem{Co-developed and verified iOS projects.}
       \resumeItemListEnd
 
@@ -241,19 +231,35 @@
 %     \resumeSubHeadingListEnd
 
 
+%-----------SKILLS-----------
+% \section{Skills}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%      \textbf{Languages}{: C++, Python, C, Rust, Go, C\#, SQL} \\
+%      \textbf{Frameworks}{: Boost, PyTorch, Django} \\
+%      \textbf{Developer Tools}{: Git, jj, container (Docker, Podman), CI/CD, Kubernetes} \\
+%      \textbf{Soft}{: collaboration and communication skills, curious, fast learner, French native, English fluent}
+%     }}
+%  \end{itemize}
 
-%
-%-----------PROGRAMMING SKILLS-----------
-\section{Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: C++, Python, C, Rust, Go, C\#, SQL} \\
-     \textbf{Frameworks}{: Boost, PyTorch, Django} \\
-     \textbf{Developer Tools}{: Git, jj, container (Docker, Podman), CI/CD, Kubernetes} \\
-     \textbf{Soft}{: collaboration and communication skills, curious, fast learner, French native, English fluent}
-    }}
- \end{itemize}
 
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Certified Kubernetes Application Developer}{Online}
+      {Linux Foundation}{Dec. 2024}
+    \resumeSubheading
+      {Computer engineering degree}{Sophia Antipolis, France}
+      {Polytech'Nice}{Aug. 2008 -- Aug. 2011}
+  \resumeSubHeadingListEnd
+
+
+%-----------INTERESTS-----------
+\section{Interests}
+\begin{adjustwidth}{0.4cm}{}
+Travel, boardgames, sci-fi novels, rock climbing, running, tech-savvy.
+\end{adjustwidth}
 
 %-------------------------------------------
 \end{document}
